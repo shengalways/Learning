@@ -1,0 +1,97 @@
+html,body{
+    margin:0;
+    padding: 0;
+}
+.box{
+    margin:0 auto;
+    padding-top:20px;
+    width: 750px;
+    height: 360px;
+    background: url("./img/car.jpg") no-repeat center;
+    position: relative;
+}
+.brand{
+    width:62px;
+    height: 62px;
+    font: bold 16px/62px "微软雅黑";
+    text-align: center;
+    margin-left:20px;
+    background: #e92b11;
+    cursor: default;
+}
+.shang{
+    width:0;
+    height: 0;
+    border-right:15px solid  rgba(165, 25, 8, 0);
+    border-bottom:15px solid rgba(165, 25, 8, 1);
+    position: absolute;
+    left:82px;
+    top:20px;
+}
+.xia{
+    width:0;
+    height: 0;
+    border-right:15px solid  rgba(165, 25, 8, 0);
+    border-top:15px solid rgba(165, 25, 8, 1);
+    position: absolute;
+    left:82px;
+    top:67px;
+}
+.nav{
+    width: 650px;
+    height: 32px;
+    background: #000;
+    position: absolute;
+    left:82px;
+    top:35px;
+}
+.nav a{
+    display: block;
+    height: 50px;
+    padding: 0 10px;
+    color: #fff;
+    float:left;
+    line-height: 50px;
+    margin-top:-9px;
+    text-decoration: none;
+}
+.nav .first{
+    margin-left:55px;
+    background: #e92b11;
+}
+.nav a:hover{
+    background: #e92b11;
+}
+.font{
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left:-150px;
+    margin-top:-20px;
+    text-align: center;
+    color: #ff0;
+    cursor: default;
+}
+.button{
+    width: 65px;
+    height: 30px;
+    background: #186261;
+    margin:0 auto;
+    margin-top:180px;
+}
+.button a{
+    font-size:12px;
+    display: block;
+    color:#fff;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+.footer{
+    width: 750px;
+    height: 55px;
+    background: #333333;
+    margin:0 auto;
+}
