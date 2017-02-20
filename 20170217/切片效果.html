@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        div{
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            right: 20px;
+            top: 30%;
+            transform-style: preserve-3d;
+            transform: perspective(600px) rotateX(50deg);
+        }
+        img{
+            position: absolute;
+            transition: all 3s;
+        }
+        img:nth-child(1){
+
+        }
+        img:nth-child(2){
+            transform: translateZ(-60px);
+        }
+        img:nth-child(3){
+            transform: translateZ(-120px);
+
+        }
+        img:nth-child(4){
+            transform: translateZ(-180px);
+
+        }
+        img:nth-child(5){
+            transform: translateZ(-240px);
+
+        }
+        img:nth-child(6){
+            transform: translateZ(-300px);
+
+        }
+    </style>
+</head>
+<body>
+    <div id="div">
+        <img src="../20170216/images/01.jpg" alt="">
+        <img src="../20170216/images/02.jpg" alt="">
+        <img src="../20170216/images/03.jpg" alt="">
+        <img src="../20170216/images/04.jpg" alt="">
+        <img src="../20170216/images/05.jpg" alt="">
+        <img src="../20170216/images/06.jpg" alt="">
+    </div>
+
+    <script>
+        var img = document.getElementsByTagName("img");
+        for (var i=0;i<img.length;i++) {
+            img[i].onclick = function() {
+                    for (var j=0;j<img.length;j++) {
+                        img[j].style.transform=""
+                    }
+                    this.style.transform = "translateX(-800px) rotateX(-50deg) scale(1.5)"
+            }
+        }
+    </script>
+</body>
+</html>
